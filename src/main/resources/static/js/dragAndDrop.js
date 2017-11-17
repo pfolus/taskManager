@@ -21,5 +21,4 @@ function drop(event) {
 
     http.open("POST", "/", true);
     http.send(data);
-    alert(data);
 }
