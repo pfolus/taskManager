@@ -13,24 +13,39 @@
 <div class="tasksContainer">
         <div id="0" class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="center-top">Tasks</div>
-                {% for task in tasks %}
-                    {% if task.getUserId() == 0 %}
-                        <div class="item" draggable="true" ondragstart="drag(event)" id="{{ task.getId() }}">{{ task.getName() }}</div>
-                    {% endif %}
-                {% endfor %}
+                    {% for task in tasks %}
+                        {% if task.getUserId() == 0 %}
+                            <div class="item" draggable="true" ondragstart="drag(event)" id="{{ task.getId() }}">{{ task.getName() }}</div>
+                        {% endif %}
+                    {% endfor %}
         </div>
 </div>
 <div class="usersContainer">
         <div id="2" class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="center-top">User 2</div>
+                    {% for task in tasks %}
+                        {% if task.getUserId() == 2 %}
+                            <div class="item" draggable="true" ondragstart="drag(event)" id="{{ task.getId() }}">{{ task.getName() }}</div>
+                        {% endif %}
+                    {% endfor %}
                 <div class="bottom-right">2</div>
         </div>
         <div id="1" class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="center-top">User 1</div>
+                    {% for task in tasks %}
+                        {% if task.getUserId() == 1 %}
+                            <div class="item" draggable="true" ondragstart="drag(event)" id="{{ task.getId() }}">{{ task.getName() }}</div>
+                        {% endif %}
+                    {% endfor %}
                 <div class="bottom-right">1</div>
         </div>
         <div id="3" class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="center-top">User 3</div>
+                    {% for task in tasks %}
+                        {% if task.getUserId() == 3 %}
+                            <div class="item" draggable="true" ondragstart="drag(event)" id="{{ task.getId() }}">{{ task.getName() }}</div>
+                        {% endif %}
+                    {% endfor %}
                 <div class="bottom-right">3</div>
         </div>
 </div>
