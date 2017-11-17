@@ -21,7 +21,7 @@
         </div>
 </div>
 <div class="usersContainer">
-        <div id="2" class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="2" class="container user2" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="center-top">User 2</div>
                     {% for task in tasks %}
                         {% if task.getUserId() == 2 %}
@@ -39,7 +39,7 @@
                     {% endfor %}
                 <div class="bottom-right">1</div>
         </div>
-        <div id="3" class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="3" class="container user3" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div class="center-top">User 3</div>
                     {% for task in tasks %}
                         {% if task.getUserId() == 3 %}
